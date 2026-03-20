@@ -1,0 +1,6 @@
+.env
+__pycache__/
+*.pyc
+output/cost_log.json
+output/seen_articles.json
+.DS_Store

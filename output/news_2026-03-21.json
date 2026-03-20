@@ -1,0 +1,493 @@
+{
+  "date": "2026-03-21",
+  "headline": "AI暴走対策とエージェント技術が急速に進展",
+  "articles": [
+    {
+      "id": "dc1cd573d87ca95c373075c7f28b1ebf",
+      "title": "［就活タイムス］生成AIで面接練習も 本紙アンケート 就活生に急速浸透 安易な活用 均質化の恐れ - 沖縄タイムス社",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1EemdkZDF3UEJ3UklqbWkySkZtNmNiTEtrQUppN2FwNEl4WVJJU2p4RzJ5bkM2YVFnWlI3RHNDdWdIVXV6VjlNdFBfbEpKX0NCMDFNWW91NkNGOF9vdHc?oc=5",
+      "summary": "［就活タイムス］生成AIで面接練習も 本紙アンケート 就活生に急速浸透 安易な活用 均質化の恐れ&nbsp;&nbsp;沖縄タイムス社",
+      "source": "Google News AI",
+      "category": "AI",
+      "published": "2026-03-20 19:00",
+      "ai_summary": "就活生の間で生成AIを面接練習に活用する傾向が広がっており、便利さの反面、回答の均質化による差別化の困難さが懸念されている。",
+      "ai_tags": [
+        "就活",
+        "生成AI",
+        "教育"
+      ],
+      "importance": 4
+    },
+    {
+      "id": "96a98ece4876547222e9fbea7a095760",
+      "title": "Generalist biological artificial intelligence in modeling the language of life - Nature",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5ySDdaWWNidklFQm80XzBrX2h3VlhRT3UxUUtnSFBZUHBIQXNmWF9yd2pCSW80VWQ1WExKWXVnaERESjE0VEtSekFWbnVPaXhTbDhVUTVRWno2VjQ3ZlFj?oc=5",
+      "summary": "Generalist biological artificial intelligence in modeling the language of life&nbsp;&nbsp;Nature",
+      "source": "Google News AI(英語)",
+      "category": "AI(海外)",
+      "published": "2026-03-20 10:56",
+      "ai_summary": "生物学の言語モデルとしてAIを応用し、生命現象の理解に貢献する汎用的な人工知能システムが開発されている。",
+      "ai_tags": [
+        "生物学",
+        "科学研究",
+        "AIモデル"
+      ],
+      "importance": 4
+    },
+    {
+      "id": "1cae95d38be33f617051bdc69c5e61cd",
+      "title": "Basic Safeguarding of Artificial Intelligence Systems - The Foundation for American Innovation",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNbU1TMC0zSU90TDBoMWl2b1hYcXhvdGtoVkZEMGE5dmdlLVRyejlaOWdHMThHRnRfX2VjYkNYc0xzYXNCZmo4RG5nc3VfbHl5cjg0ZUZHYjhab3RZaWQwTTFmZ2ZXcF9tMWtJV3pPWEhpb2EzMVI2RG1PbG1fTVlmTUpUME82aENxdEE?oc=5",
+      "summary": "Basic Safeguarding of Artificial Intelligence Systems&nbsp;&nbsp;The Foundation for American Innovation",
+      "source": "Google News AI(英語)",
+      "category": "AI(海外)",
+      "published": "2026-03-20 08:12",
+      "ai_summary": "AI システムの安全性確保に向けた基本的なセーフガード機構の構築重要性が提唱されている。",
+      "ai_tags": [
+        "セキュリティ",
+        "規制",
+        "ガバナンス"
+      ],
+      "importance": 4
+    },
+    {
+      "id": "d5eca29ee7966c1c813a7f3bebf6d36e",
+      "title": "【完全版】唸るほど凄い「Claude Cowork」活用法、最強すぎた「ChatGPT使い分け術」 連載：きょうから使える生成AI仕事術 - ビジネス+IT",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1NSGx5ZloyelhVUGVuSG1LYV9fRU85OFBMb0J0NlhGU21jR3JoTnNmYTZXbm5DUlVKZ1ZjSTMyR0pKRV9ELXdYSzVhcC1QQ3JLczRJ?oc=5",
+      "summary": "【完全版】唸るほど凄い「Claude Cowork」活用法、最強すぎた「ChatGPT使い分け術」 連載：きょうから使える生成AI仕事術&nbsp;&nbsp;ビジネス+IT",
+      "source": "Google News AI",
+      "category": "AI",
+      "published": "2026-03-18 22:10",
+      "ai_summary": "Claude CoworkとChatGPTの使い分け方法や活用テクニックについて、実務で即座に導入できる具体的な事例が紹介されている。",
+      "ai_tags": [
+        "Claude",
+        "ChatGPT",
+        "ビジネス活用"
+      ],
+      "importance": 4
+    },
+    {
+      "id": "d9433bd588de6c7e5eb9f362f39e7130",
+      "title": "マーケ向けAIの本命「Claude」 従来1カ月かかった仮説導出が半日で完了 - 日経クロストレンド",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB0dUZiOW84S1czTEdsekxvUFlWdjRpMm14Nl9pRGZodFVaZUxXZ3F0XzJUdS1feTVVU19jU2tYenRkdkxHdTMzNm5faXBLQkxTRFdpVWczYm1tVkZYNW8tSngtVHpPdw?oc=5",
+      "summary": "マーケ向けAIの本命「Claude」 従来1カ月かかった仮説導出が半日で完了&nbsp;&nbsp;日経クロストレンド",
+      "source": "Google News AI",
+      "category": "AI",
+      "published": "2026-03-17 15:00",
+      "ai_summary": "マーケティング業務でClaudeを活用することで、従来1ヶ月要していた仮説立案プロセスを半日に短縮できることが報告されている。",
+      "ai_tags": [
+        "マーケティング",
+        "業務効率化",
+        "Claude"
+      ],
+      "importance": 4
+    },
+    {
+      "id": "ec349658aef649f893a1888dd4efe6dc",
+      "title": "有罪、とAIは告げた - web.nhk",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5KSlVGeTNuUUtDWHB4endyODY4X2VjNTN6NzhZaVVBUDV2TUZhWTkyRlNmaG9fSlhEeDl1N0ZSZDZxcnFwUGF2a2d4V2ZveEVUelE0T0FzWUVvb0lZbGJyZTlMZG1ncTN0dXc?oc=5",
+      "summary": "有罪、とAIは告げた&nbsp;&nbsp;web.nhk",
+      "source": "Google News テクノロジー",
+      "category": "テクノロジー",
+      "published": "2026-03-20 15:12",
+      "ai_summary": "AIが司法判断を下す場面が現実化し、有罪判決をAIが示すケースが報告された。法曹界でのAI活用の実態が明らかになりつつある。",
+      "ai_tags": [
+        "AI",
+        "司法",
+        "倫理"
+      ],
+      "importance": 4
+    },
+    {
+      "id": "35681343fd041e3c5863bebddaff217f",
+      "title": "コーディングAIエージェントの支援を受けてソフトウェアを開発する手法「エージェントエンジニアリング」とは？",
+      "link": "https://gigazine.net/news/20260320-agentic-engineering/",
+      "summary": "AIにコードを書かせること自体はすでに珍しくありませんが、最近は書いたコードを自分で実行し、その結果を見ながら修正まで進めるAIツールも登場しています。こうしたAIの支援を受けながらソフトウェア開発を進める考え方が「エージェントエンジニアリング」です。ウェブ開発者のサイモン・ウィリソン氏は、Claude Code・OpenAI Codex・Gemini CLIのようなコーディングAIエージェントを活用することで、人間は「何を作るかを決める」「必要な道具を整える」「出てきた結果を検証する」役割をより強く担うようになると主張しています。続きを読む...",
+      "source": "GIGAZINE",
+      "category": "テクノロジー",
+      "published": "2026-03-20 14:00",
+      "ai_summary": "AIが自動的にコードを作成し修正まで行うエージェント型開発ツールが登場。開発者の役割がコード検証と企画に特化する方向へシフトしている。",
+      "ai_tags": [
+        "AI開発",
+        "ソフトウェア",
+        "プログラミング"
+      ],
+      "importance": 4
+    },
+    {
+      "id": "9b428a6a158343e29fcc9de89b2392cf",
+      "title": "NVIDIA、「AIエージェントの暴走リスク」に対処　OpenClaw向け新基盤を発表",
+      "link": "https://japan.cnet.com/article/35245281/",
+      "summary": "自律的に動作するAIエージェントは、誤った判断や外部からの悪意ある指示によって「暴走するリスク」が指摘されている。こうした課題に対し、NVIDIAはOpenClaw向けの新たなリファレンススタック「NemoClaw」を発表した。エージェントを隔離環境で動作させるほか、通信の監視やポリシーによる制御機能を備え、リスクの抑制を図るとしている──。",
+      "source": "CNET Japan",
+      "category": "テクノロジー",
+      "published": "2026-03-19 22:02",
+      "ai_summary": "NVIDIAが自律AIエージェントの暴走防止を目的とした新基盤『NemoClaw』を発表。隔離環境での実行と通信監視で安全性を確保する。",
+      "ai_tags": [
+        "AI安全性",
+        "NVIDIA",
+        "リスク管理"
+      ],
+      "importance": 4
+    },
+    {
+      "id": "6ab929415775adf8c46b2b0606cdd24e",
+      "title": "2 Millionaire-Maker Artificial Intelligence (AI) Stocks - The Motley Fool",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQXdnUUUwV1JzejhvSDBhejhqWWF0clZnbmhpLUhYZWNPcm9DVjFsM0hPU1FSZVFKSkxLR1dqS080T1FtVHp6WDRHZTJDWWhBZ3lteVcyZUdzZTE1N0N0amkyTmVnS0c5YzNyOUZ4dXNfeWxvM1R2ajI2RTFHV3ZjSE5SNGxYdVJmTUVCRnhPdFJOa1Fxbkh4OQ?oc=5",
+      "summary": "2 Millionaire-Maker Artificial Intelligence (AI) Stocks&nbsp;&nbsp;The Motley Fool",
+      "source": "Google News AI(英語)",
+      "category": "AI(海外)",
+      "published": "2026-03-20 18:59",
+      "ai_summary": "AI関連銘柄の中でも特に利益成長が期待できる2つの企業に投資家の注目が集まっている。",
+      "ai_tags": [
+        "投資",
+        "AI企業",
+        "株式"
+      ],
+      "importance": 3
+    },
+    {
+      "id": "fb259b3501a6f620e4ae8b46fecb42f9",
+      "title": "DoorDash taps millions of couriers to train artificial intelligence - Los Angeles Times",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQNHkxc215TzhpdHlxSGxzR0RrVEtuQ1JMUVVnZGZrTmpVYXFXNVV5U2I3UXFNVUp1TktEM0htT0pGc240ZUJGUl9paTlQZ2UxT0NXRDZyR0gyZXJDU2tvRDd1WGVBa2lyRVR0akNNOWN4M2FOQ1pTUm9iTVlUUlNtcUFDeElic3Q2VHZCeU5PS3VnSHc4SmYyOHFDNnVkNG92akxOdzFZc09CSV9HSzY5X0dxdlRnN1RZ?oc=5",
+      "summary": "DoorDash taps millions of couriers to train artificial intelligence&nbsp;&nbsp;Los Angeles Times",
+      "source": "Google News AI(英語)",
+      "category": "AI(海外)",
+      "published": "2026-03-20 17:22",
+      "ai_summary": "配送サービスのDoorDashが、配達員数百万人のデータを活用してAIモデルの学習に利用する取り組みを開始している。",
+      "ai_tags": [
+        "AI学習",
+        "ビジネス活用",
+        "データ"
+      ],
+      "importance": 3
+    },
+    {
+      "id": "98459d753dac82401dce2b21141445d3",
+      "title": "Anthropic、開発者カンファレンス「Code with Claude」を6/10に東京で開催 ―サンフランシスコ、ロンドンでも5月に開催 - gihyo.jp",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9uU3pfOXBSbnlLZFpwQXBtcm5VamlRTjZxY3ZQMVg4UGQ3RHdyWXd1MVlpcHROeTF1aVV5WGRMTk9ENnNYYzNudDZvOWF3XzFTQThYaVVPNXM4ekdkR1E?oc=5",
+      "summary": "Anthropic、開発者カンファレンス「Code with Claude」を6/10に東京で開催 ―サンフランシスコ、ロンドンでも5月に開催&nbsp;&nbsp;gihyo.jp",
+      "source": "Google News AI",
+      "category": "AI",
+      "published": "2026-03-19 04:58",
+      "ai_summary": "Anthropicが6月に東京でClaudeの開発者向けカンファレンスを開催予定で、サンフランシスコやロンドンでも5月の開催が決定している。",
+      "ai_tags": [
+        "Anthropic",
+        "Claude",
+        "イベント"
+      ],
+      "importance": 3
+    },
+    {
+      "id": "8aaf5e32a747aafc3453c30ba56309f8",
+      "title": "デスクトップPCのAIエージェントをスマホで遠隔操作 「Claude Cowork」に新機能（ITmedia NEWS） - Yahoo!ニュース",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE92QWt1V3VQanpJNzlhTDlzdTZGTmRxLXVHZW5kN0xTTHB1OEhLYkZENlQyWUtReG1scG9XWFU2V091WVVTdG1SV0RKd19mSV83SU90UXNLNXJBM1BWZ3ZfWkFic0hSNlVtVmlmMEVVbzFPZXRyd0QzaHdWZVFta2s?oc=5",
+      "summary": "デスクトップPCのAIエージェントをスマホで遠隔操作 「Claude Cowork」に新機能（ITmedia NEWS）&nbsp;&nbsp;Yahoo!ニュース",
+      "source": "Google News AI",
+      "category": "AI",
+      "published": "2026-03-18 09:49",
+      "ai_summary": "Claude Coworkに新機能が追加され、スマートフォンからデスクトップPCのAIエージェントを遠隔で操作できるようになった。",
+      "ai_tags": [
+        "Claude Cowork",
+        "機能拡張",
+        "モバイル"
+      ],
+      "importance": 3
+    },
+    {
+      "id": "ce8862ae7ad2522c95e00ada24b698d4",
+      "title": "AI時代の情報空間、健全化目指す産学の新組織設立へ 慶大でシンポ - 朝日新聞",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBKVmo3MG54dG12YlBReUU4enhtSHg5NmxvdWdLcjJILXBTMlpXVU1yNnNxTHd6OTUzSjFmSklRNVgweFRrb21CTG9pRlJXYThwZ1NzcE0wRjlXUEZnUVdfekV3dm1Gbms?oc=5",
+      "summary": "AI時代の情報空間、健全化目指す産学の新組織設立へ 慶大でシンポ&nbsp;&nbsp;朝日新聞",
+      "source": "Google News テクノロジー",
+      "category": "テクノロジー",
+      "published": "2026-03-20 10:45",
+      "ai_summary": "AI時代における情報空間の健全化を目指す産学協力の新組織が立ち上がる予定。慶応大学主催のシンポジウムで発表される。",
+      "ai_tags": [
+        "AI",
+        "情報セキュリティ",
+        "産学連携"
+      ],
+      "importance": 3
+    },
+    {
+      "id": "2380341c3f6f545eb775a57298c1adb5",
+      "title": "福島第一原発3号機 原子炉の真下の核燃料デブリか 映像公開",
+      "link": "https://news.web.nhk/newsweb/na/na-k10015080001000",
+      "summary": "福島第一原子力発電所3号機で小型のドローンを使った内部の調査を行った東京電力は、原発事故のあと初めて原子炉の真下にあたるエリアを撮影し、事故で溶け落ちた核燃料デブリの可能性がある付着物などが映った映像…",
+      "source": "NHK 科学・文化",
+      "category": "テクノロジー",
+      "published": "2026-03-19 10:55",
+      "ai_summary": "福島第一原発3号機の内部調査でドローンが原子炉直下のエリアを撮影。事故後初めて確認された核燃料デブリの可能性がある付着物が映像に記録された。",
+      "ai_tags": [
+        "原発",
+        "福島",
+        "ドローン"
+      ],
+      "importance": 3
+    },
+    {
+      "id": "b0029f77d1de55ea2a00f455e7c7c5a2",
+      "title": "A Christian Look at Artificial Intelligence - The Banner",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPRUJva0F6R1l6YkVXa3lKa1BERmhpSHBiLXEzOGN2WkVsTGZQRkQ5dE0wZG9SdlBId3liTHJvb2gzRTVvOFVGWnJRSmktUGJfN2p6dU1hLVdUTjFMRS1DYXRBM2YtNFpiZm40NXg5X0s1SVJ2ZDdIRTF2Znh6SjBPUFpYdFBtQ0EzaHZPQUZ3?oc=5",
+      "summary": "A Christian Look at Artificial Intelligence&nbsp;&nbsp;The Banner",
+      "source": "Google News AI(英語)",
+      "category": "AI(海外)",
+      "published": "2026-03-20 13:59",
+      "ai_summary": "宗教的観点からAIの発展や利用について倫理的な検討を行う議論が展開されている。",
+      "ai_tags": [
+        "倫理",
+        "宗教",
+        "価値観"
+      ],
+      "importance": 2
+    },
+    {
+      "id": "b4e50dbaecfcd3ca726f2b24e471ef10",
+      "title": "MetaがHorizon WorldsのVRサポート終了を撤回",
+      "link": "https://gigazine.net/news/20260320-meta-reverses-horizon-worlds-vr-support-end/",
+      "summary": "MetaがHorizon WorldsのVRサポート終了を撤回したことが、同社の最高技術責任者(CTO)であるアンドリュー・ボズワース氏の口から語られました。続きを読む...",
+      "source": "GIGAZINE",
+      "category": "テクノロジー",
+      "published": "2026-03-20 13:00",
+      "ai_summary": "Metaが一度発表したHorizon WorldsのVRサポート終了方針を覆し、継続支援を決定した。ユーザーの声に応えた戦略転換である。",
+      "ai_tags": [
+        "VR",
+        "Meta",
+        "メタバース"
+      ],
+      "importance": 2
+    },
+    {
+      "id": "a617edae266cb79bc96a7ab2b92272a4",
+      "title": "無料でIMAPメールボックスをまるごと別のIMAPに転送できる「imapsync」、Windows・Linux・Mac対応でGmailでも可能",
+      "link": "https://gigazine.net/news/20260320-imapsync/",
+      "summary": "メールシステムの移行やバックアップは、環境ごとに仕様が異なり複雑になりがちです。Windows・Linux・Macで動作するIMAP転送ツールで、メールシステムの移行やバックアップを簡単に行える「imapsync」が公開されています。続きを読む...",
+      "source": "GIGAZINE",
+      "category": "テクノロジー",
+      "published": "2026-03-20 11:00",
+      "ai_summary": "複数のOS対応するメール移行ツール『imapsync』が公開され、無料でIMAP形式のメール転送が可能になった。Gmail含め様々なサービスで利用できる。",
+      "ai_tags": [
+        "メール",
+        "ツール",
+        "データ移行"
+      ],
+      "importance": 2
+    },
+    {
+      "id": "785ceb9569a7e370a19f206a8dae305a",
+      "title": "楽天証券、ログイン情報の再設定をオンラインで完結　JPKI対応",
+      "link": "https://www.watch.impress.co.jp/docs/news/2095017.html",
+      "summary": "楽天証券は、3月22日からマイナンバーカードによる公的個人認証サービス(JPKI)を導入し、ログインIDの確認やログインに必要な情報の再設定をオンラインで可能とする。",
+      "source": "Impress Watch",
+      "category": "テクノロジー",
+      "published": "2026-03-20 11:00",
+      "ai_summary": "楽天証券がマイナンバーカード認証を導入し、ログイン情報の再設定をオンライン完結できるようにした。本人確認手続きの利便性が向上する。",
+      "ai_tags": [
+        "セキュリティ",
+        "マイナンバー",
+        "金融"
+      ],
+      "importance": 2
+    },
+    {
+      "id": "491829361fab42786310d22a0c225fa0",
+      "title": "エレコムの半固体モバイルバッテリー「DE-C86-10000」レビュー、半固体リチウムイオン電池を採用して高い携帯性と安全性を実現",
+      "link": "https://gigazine.net/news/20260320-elecom-de-c86-10000pn/",
+      "summary": "モバイルバッテリーの多くは「液体電解質を用いたリチウムイオン電池」を採用しており、発熱や発火といった安全性の課題が問題となることもあります。エレコムののモバイルバッテリー「DE-C86-10000」は電解質をゲル状にした「半固体リチウムイオン電池」を採用しており、安全性・携帯性・長寿命・温度範囲のバランスに優れた次世代バッテリーとなっています。そんなDE-C86-10000をエレコムから借りることができたので、実際に使用してみました。続きを読む...",
+      "source": "GIGAZINE",
+      "category": "テクノロジー",
+      "published": "2026-03-20 09:00",
+      "ai_summary": "エレコムの半固体リチウムイオン電池搭載モバイルバッテリーが登場。従来の液体電解質より安全性と性能が向上している。",
+      "ai_tags": [
+        "バッテリー",
+        "モバイル",
+        "技術"
+      ],
+      "importance": 2
+    },
+    {
+      "id": "7d351bc6b11d940cfaa383d7f6197a76",
+      "title": "イラン情勢に翻弄されるトレーダー、AIに活路－戦況分析を高速化 - Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBpZWtuNVlHNG9hTVJCTVpmUUY4WnJIWE5oSkJjQzB0SzNuaC1oOHpmbml4UFJqd1NQUV9reDd0MkNISnFIZXV0NUpsUzhIWl85YVVzaHNHNkdTMUlab2FsUzJER0Jhb0E3SlA5Z0FfaHJHbWF2XzUw?oc=5",
+      "summary": "イラン情勢に翻弄されるトレーダー、AIに活路－戦況分析を高速化&nbsp;&nbsp;Bloomberg.com",
+      "source": "Google News テクノロジー",
+      "category": "テクノロジー",
+      "published": "2026-03-20 05:39",
+      "ai_summary": "金融市場でAIを活用した戦況分析が加速している。イラン情勢など地政学的リスク分析の高速化を実現し、トレーダーの判断支援に役立つ。",
+      "ai_tags": [
+        "AI",
+        "金融",
+        "地政学"
+      ],
+      "importance": 2
+    },
+    {
+      "id": "5bac97a8c2fe2b71de5c5d10dedb85ef",
+      "title": "将棋「王将戦」七番勝負 第6局 藤井六冠が勝ち 決着は最終局へ",
+      "link": "https://news.web.nhk/newsweb/na/na-k10015079981000",
+      "summary": "将棋の八大タイトルの1つ「王将戦」七番勝負の第6局が名古屋市で行われ、藤井聡太六冠（23）が勝ち、決着を最終局に持ち込みました。",
+      "source": "NHK 科学・文化",
+      "category": "テクノロジー",
+      "published": "2026-03-19 11:26",
+      "ai_summary": "将棋の王将戦七番勝負第6局で藤井聡太六冠が勝利し、決着が最終局に持ち込まれた。タイトル防衛戦の緊迫した状況が続く。",
+      "ai_tags": [
+        "将棋",
+        "藤井聡太",
+        "タイトル戦"
+      ],
+      "importance": 2
+    },
+    {
+      "id": "f2c6ffc7b3d38e6729b87f51ec5ef7a0",
+      "title": "柏崎刈羽原発6号機 警報原因は金属疲労 22日にも発送電再開へ",
+      "link": "https://news.web.nhk/newsweb/na/na-k10015079971000",
+      "summary": "東京電力は、漏電を検知する警報が作動したため、発電と送電を停止させた新潟県にある柏崎刈羽原子力発電所6号機について、振動による金属疲労で発電機に関連する部品に亀裂が生じたことが原因だったと発表しました…",
+      "source": "NHK 科学・文化",
+      "category": "テクノロジー",
+      "published": "2026-03-19 09:56",
+      "ai_summary": "柏崎刈羽原発6号機の警報原因が金属疲労と判明。22日にも発電送電の再開が予定されている。",
+      "ai_tags": [
+        "原発",
+        "金属疲労",
+        "安全"
+      ],
+      "importance": 2
+    },
+    {
+      "id": "f9a266fa24f012170fad0582d425d580",
+      "title": "小学館 性加害事件の漫画家起用問題で第三者委員会を設置",
+      "link": "https://news.web.nhk/newsweb/na/na-k10015079951000",
+      "summary": "小学館の漫画アプリの編集部が、性加害事件を起こして連載が中止となった漫画家を別のペンネームで原作者として再び起用していた問題で、小学館は19日第三者委員会を設置したと発表しました。",
+      "source": "NHK 科学・文化",
+      "category": "テクノロジー",
+      "published": "2026-03-19 09:28",
+      "ai_summary": "小学館が性加害事件を起こした漫画家の再起用問題について第三者委員会を設置。コンプライアンス体制の見直しを進める方針。",
+      "ai_tags": [
+        "出版",
+        "ガバナンス",
+        "倫理"
+      ],
+      "importance": 2
+    },
+    {
+      "id": "99e25f3f6548954db306f9d3c0eabbe7",
+      "title": "ついにiPhoneのファミリー共有で「管理者以外の決済」が可能に　iOS 26.4から",
+      "link": "https://japan.cnet.com/article/35245265/",
+      "summary": "Appleの「ファミリー共有」プランに、決済のちょっとした柔軟性がついにもたらされる。ファミリーメンバーは、もう単一の支払い方法に縛られることはなくなるのだ。",
+      "source": "CNET Japan",
+      "category": "テクノロジー",
+      "published": "2026-03-19 08:10",
+      "ai_summary": "iOS 26.4以降、iPhoneのファミリー共有で管理者以外のメンバーが独立した支払い方法を使用できるようになる。決済の柔軟性が大幅に向上する。",
+      "ai_tags": [
+        "Apple",
+        "iOS",
+        "ペアレンタルコントロール"
+      ],
+      "importance": 2
+    },
+    {
+      "id": "04991078107088164cb2e5a91b277092",
+      "title": "『機動武闘伝Gガンダム』30周年記念ファイティングムービー公開、『ガンダムX』30周年記念ロゴも",
+      "link": "https://gigazine.net/news/20260320-g-gundam-30th-fighting-movie/",
+      "summary": "『機動武闘伝Gガンダム』放送30周年の節目を迎えたことを記念して、3DCGのプリビズを主体とした実験的デジタルアニメーションとして30周年記念ファイティングムービーが公開されました。また、『機動武闘伝Gガンダム』『新機動戦記ガンダムW』と展開されてきた「ガンダムGWX30周年プロジェクト」の最後の作品となる『機動新世紀ガンダムX』の30周年記念ロゴも公開されています。続きを読む...",
+      "source": "GIGAZINE",
+      "category": "テクノロジー",
+      "published": "2026-03-20 10:00",
+      "ai_summary": "『機動武闘伝Gガンダム』の放送30周年を記念し、3DCGアニメーションのファイティングムービーが公開された。デジタルアニメーション技術の進化を示す作品。",
+      "ai_tags": [
+        "アニメ",
+        "3DCG",
+        "記念"
+      ],
+      "importance": 1
+    },
+    {
+      "id": "806ffb3c0a025d1ff1e2e4142100d161",
+      "title": "「超危険生物展」が開幕　陸と海のヤバい奴らが国立科学博物館に集結!",
+      "link": "https://www.watch.impress.co.jp/docs/news/2094966.html",
+      "summary": "地球上には、ヒトにとって時に致命的な脅威となる「危険生物」が数多く存在する。そんな生き物たちが持つ「必殺技」に隠された生物学的・化学的なカラクリに、最新の科学で迫る特別展「超危険生物展 科学で挑む生き物の本気」が東京・上野の国立科学博物館で、6月14日までの会期で開催されている。",
+      "source": "Impress Watch",
+      "category": "テクノロジー",
+      "published": "2026-03-20 09:00",
+      "ai_summary": "国立科学博物館で危険生物の生態を科学的に解明する特別展が開催中。6月14日まで開催予定で、致命的な生き物の仕組みを学べる。",
+      "ai_tags": [
+        "科学",
+        "生物",
+        "展示"
+      ],
+      "importance": 1
+    },
+    {
+      "id": "838c7489536bd72542ca24bd2de51185",
+      "title": "競馬AIがフラワーC、ファルコンSを大予想 3週連続的中へ厳選ワイド3点＆3連複10点で勝負！ - スポーツナビ",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBuQ2dvSGlqMW9qb2RBSGVJaUp3REU4NTEtdWpmX1RrWWVGOEMyNnJubHpDVlJGbWU3eXZOSUMwSFBDbkt2UG9wVWF6YmpMbGhzaEpXby1Hem9iV1hSaUNDaDZ0QU1EWVFHRGdEZEJR?oc=5",
+      "summary": "競馬AIがフラワーC、ファルコンSを大予想 3週連続的中へ厳選ワイド3点＆3連複10点で勝負！&nbsp;&nbsp;スポーツナビ",
+      "source": "Google News テクノロジー",
+      "category": "テクノロジー",
+      "published": "2026-03-20 08:20",
+      "ai_summary": "競馬予想AIが週末レースの予想を発表。過去数週間の的中記録に基づき、複数の馬券パターンを提示している。",
+      "ai_tags": [
+        "AI予想",
+        "競馬",
+        "スポーツ"
+      ],
+      "importance": 1
+    },
+    {
+      "id": "d364ef33c28edd01fb3353a0b60b351f",
+      "title": "シチズン、エコ・ドライブ50周年で新型“フォトン”",
+      "link": "https://www.watch.impress.co.jp/docs/news/2094909.html",
+      "summary": "シチズン時計は、「エコ・ドライブ」誕生50周年を記念し、新型の腕時計「Eco-Drive PHOTON」(エコ・ドライブ フォトン)2機種を2026年秋に発売する。価格はシルバーの「BJ6560-53W」が148,500円、ブラックとゴールドの「BJ6569-59X」が178,200円。それぞれ世界限定5,000本の数量限定。",
+      "source": "Impress Watch",
+      "category": "テクノロジー",
+      "published": "2026-03-20 01:00",
+      "ai_summary": "シチズン時計がエコ・ドライブ技術50周年を記念し、新型腕時計2機種を秋に発売。各5000本限定で148500円と178200円の価格帯。",
+      "ai_tags": [
+        "腕時計",
+        "記念",
+        "テクノロジー"
+      ],
+      "importance": 1
+    },
+    {
+      "id": "b7cedcbc2ba6a8083f5d239ce332d2be",
+      "title": "【レビュー】Apple Fitness+を1カ月続けた結果　自宅がジムになるありがたさ",
+      "link": "https://www.watch.impress.co.jp/docs/review/review/2093935.html",
+      "summary": "1月21日、アップルが「Apple Fitness+」を日本でスタートしました。忘年会、新年会を経てすっかりリバウンドした筆者にとって、まさに「待ってました!」というタイミング。ノリノリで挑みました。",
+      "source": "Impress Watch",
+      "category": "テクノロジー",
+      "published": "2026-03-20 00:15",
+      "ai_summary": "Apple Fitness+を1ヶ月間試用したレビュー記事。自宅でのフィットネス活動が手軽に実現できる利点が述べられている。",
+      "ai_tags": [
+        "Apple",
+        "フィットネス",
+        "レビュー"
+      ],
+      "importance": 1
+    },
+    {
+      "id": "bd38a544ed64e45ef9d8e9f96015e33f",
+      "title": "ファミマ45周年で「45%増量作戦」　コッペパンやカレー、助六寿司など",
+      "link": "https://www.watch.impress.co.jp/docs/news/2095013.html",
+      "summary": "ファミリーマートは、創立45周年を記念して、人気商品を価格据え置きで「45%」増量するキャンペーンを3月24日から開始する。「うまくて、ドでかい! お値段そのまま なぜか 45%増量作戦」と題し、24日から第1弾、31日から第2弾を展開する。",
+      "source": "Impress Watch",
+      "category": "テクノロジー",
+      "published": "2026-03-19 23:00",
+      "ai_summary": "ファミリーマートが創立45周年を記念し、複数の人気商品を価格据え置きで45%増量するキャンペーンを3月下旬から展開する。",
+      "ai_tags": [
+        "キャンペーン",
+        "小売",
+        "プロモーション"
+      ],
+      "importance": 1
+    }
+  ],
+  "daily_digest": "本日のAIニュースは、実務領域での急速な普及と技術進化が顕著となっています。Claudeを中心とした生成AIの活用が就活、マーケティング、配送業務など多岐にわたる分野で進展する一方で、安全性確保や倫理的課題への対応も重要テーマとして浮上しています。特にClaudeの新機能開発と開発者向けイベントの拡大により、エコシステムの成熟が加速している傾向が見られます。\n\n本日のテック関連ニュースはAI技術の実装と安全対策が大きなテーマとなっている。エージェント型AIツールの普及が進む一方で、NVIDIAが暴走リスク対策を発表するなど、AI安全性への関心が高まっている。また、原発関連では福島第一3号機の新しい調査映像と柏崎刈羽の復旧予定が報じられ、エネルギー政策の重要性が改めて浮き彫りになった。その他、Apple、Meta、シチズンなど大手企業による周年記念商品の発表も相次いでいる。",
+  "sns_post": "🤖 AI技術が急速に進化中！エージェント型開発ツールで開発方法が変わる一方、NVIDIAが暴走対策『NemoClaw』を発表。安全性とイノベーションのバランスが業界の焦点に。詳細は続きをチェック！ #AI #テクノロジー #イノベーション",
+  "cost_usd": 0.022508,
+  "tokens": {
+    "input": 8640,
+    "output": 3899
+  }
+}

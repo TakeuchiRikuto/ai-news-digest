@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Digest - AIが厳選・要約する最新テクノロジーニュース</title>
+    <meta name="description" content="AIが厳選・要約する最新テクノロジーニュース">
+    <link rel="canonical" href="https://yourusername.github.io/ai-news-digest/">
+    <meta property="og:title" content="AI News Digest">
+    <meta property="og:description" content="AIが厳選・要約する最新テクノロジーニュース">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/ai-news-digest/">
+    <meta property="og:site_name" content="AI News Digest">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="AI News Digest">
+    <meta name="twitter:description" content="AIが厳選・要約する最新テクノロジーニュース">
+    <meta name="robots" content="index, follow">
+    <link rel="alternate" type="application/rss+xml" title="AI News Digest" href="https://yourusername.github.io/ai-news-digest/feed.xml">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "AI News Digest",
+        "url": "https://yourusername.github.io/ai-news-digest/",
+        "description": "AIが厳選・要約する最新テクノロジーニュース",
+        "publisher": {"@type": "Organization", "name": "AI News Digest"}
+    }
+    </script>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, 'Hiragino Sans', 'Noto Sans JP', 'Segoe UI', sans-serif;
+    background: #f5f7fa; color: #333;
+    line-height: 1.8;
+}
+.container {
+    max-width: 800px; margin: 0 auto; padding: 20px;
+}
+/* ナビゲーション */
+.site-nav {
+    background: #fff; padding: 12px 20px;
+    display: flex; align-items: center; justify-content: space-between;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100;
+}
+.nav-home {
+    font-weight: 700; font-size: 1.1em; color: #667eea;
+    text-decoration: none;
+}
+.nav-links { display: flex; gap: 16px; }
+.nav-links a {
+    color: #555; text-decoration: none; font-size: 0.9em;
+    padding: 4px 8px; border-radius: 6px; transition: background 0.2s;
+}
+.nav-links a:hover { background: #f0f0f5; color: #667eea; }
+/* ヘッダー */
+header.article-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white; padding: 30px; border-radius: 12px;
+    margin-bottom: 30px;
+}
+header.article-header h1 { font-size: 1.5em; margin-bottom: 10px; }
+header.article-header .date { opacity: 0.8; font-size: 0.9em; }
+/* ダイジェスト */
+.digest {
+    background: white; padding: 25px; border-radius: 12px;
+    margin-bottom: 20px; border-left: 4px solid #667eea;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+.digest h2 { color: #667eea; margin-bottom: 10px; font-size: 1.1em; }
+/* 記事カード */
+.article-card {
+    background: white; padding: 20px; border-radius: 12px;
+    margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.article-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+.article-card h3 { font-size: 1.1em; margin-bottom: 8px; }
+.article-card h3 a { color: #333; text-decoration: none; }
+.article-card h3 a:hover { color: #667eea; }
+.meta { color: #888; font-size: 0.85em; margin-bottom: 8px; }
+.meta .source { color: #667eea; font-weight: bold; }
+.meta .importance {
+    display: inline-block; background: #667eea; color: white;
+    padding: 2px 8px; border-radius: 10px; font-size: 0.75em;
+}
+.tags { margin-top: 10px; }
+.tags span {
+    display: inline-block; background: #e8eaf6;
+    color: #667eea; padding: 3px 10px;
+    border-radius: 15px; font-size: 0.8em; margin-right: 5px; margin-bottom: 4px;
+}
+/* アフィリエイト */
+.affiliate-box {
+    background: linear-gradient(135deg, #fff8e1 0%, #fff3e0 100%);
+    padding: 20px; border-radius: 12px;
+    margin: 25px 0; text-align: center;
+    border: 1px solid #ffe0b2; position: relative;
+}
+.affiliate-label {
+    position: absolute; top: -8px; left: 16px;
+    background: #ff9800; color: white; font-size: 0.7em;
+    padding: 1px 8px; border-radius: 4px; font-weight: bold;
+}
+.affiliate-link {
+    display: inline-block; color: #e65100; font-weight: bold;
+    text-decoration: none; font-size: 1.05em;
+    padding: 8px 16px; margin: 4px;
+    border-radius: 8px; background: rgba(255,255,255,0.7);
+    transition: background 0.2s;
+}
+.affiliate-link:hover { background: rgba(255,255,255,1); }
+.affiliate-desc { color: #888; display: block; margin-top: 2px; font-size: 0.8em; }
+/* 広告 */
+.ad-unit { margin: 25px 0; text-align: center; min-height: 90px; }
+/* 関連記事 */
+.related-section {
+    background: white; padding: 25px; border-radius: 12px;
+    margin: 25px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+.related-section h2 { color: #667eea; margin-bottom: 15px; font-size: 1.1em; }
+.related-list { list-style: none; }
+.related-list li { padding: 8px 0; border-bottom: 1px solid #f0f0f5; }
+.related-list li:last-child { border-bottom: none; }
+.related-list a { color: #333; text-decoration: none; }
+.related-list a:hover { color: #667eea; }
+.related-list .related-date { color: #aaa; font-size: 0.8em; margin-left: 8px; }
+/* フッター */
+footer.site-footer {
+    text-align: center; color: #888;
+    padding: 30px 20px; font-size: 0.85em;
+    border-top: 1px solid #e0e0e0; margin-top: 40px;
+}
+footer.site-footer a { color: #667eea; text-decoration: none; }
+footer.site-footer .footer-links { margin-bottom: 10px; }
+footer.site-footer .footer-links a { margin: 0 8px; }
+/* レスポンシブ */
+@media (max-width: 600px) {
+    .container { padding: 10px; }
+    header.article-header { padding: 20px; }
+    header.article-header h1 { font-size: 1.2em; }
+    .site-nav { flex-direction: column; gap: 8px; }
+    .nav-links { gap: 8px; flex-wrap: wrap; justify-content: center; }
+}
+
+    .hero {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white; padding: 40px 30px; border-radius: 16px;
+        margin-bottom: 30px; text-align: center;
+    }
+    .hero h1 { font-size: 1.8em; margin-bottom: 8px; }
+    .hero p { opacity: 0.9; font-size: 1em; }
+    .day-card {
+        background: white; padding: 24px; border-radius: 12px;
+        margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .day-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .day-card h2 { font-size: 1.15em; margin-bottom: 6px; }
+    .day-card h2 a { color: #333; text-decoration: none; }
+    .day-card h2 a:hover { color: #667eea; }
+    .day-card .day-date { color: #667eea; font-weight: bold; font-size: 0.85em; margin-bottom: 8px; }
+    .day-card .day-digest { color: #666; font-size: 0.92em; line-height: 1.6; }
+    .day-card .day-count { color: #aaa; font-size: 0.8em; margin-top: 8px; }
+    .pagination { text-align: center; margin: 30px 0; }
+    .pagination a, .pagination span {
+        display: inline-block; padding: 8px 14px; margin: 2px;
+        border-radius: 8px; text-decoration: none; font-size: 0.9em;
+    }
+    .pagination a { background: white; color: #667eea; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+    .pagination a:hover { background: #667eea; color: white; }
+    .pagination .current { background: #667eea; color: white; }
+    @media (max-width: 600px) {
+        .hero { padding: 25px 20px; }
+        .hero h1 { font-size: 1.4em; }
+    }
+    </style>
+</head>
+<body>
+    <nav class="site-nav">
+    <a href="https://yourusername.github.io/ai-news-digest/" class="nav-home">AI News Digest</a>
+    <div class="nav-links">
+        <a href="https://yourusername.github.io/ai-news-digest/">トップ</a>
+        <a href="https://yourusername.github.io/ai-news-digest/categories/ai/">AI</a>
+        <a href="https://yourusername.github.io/ai-news-digest/categories/tech/">テクノロジー</a>
+        <a href="https://yourusername.github.io/ai-news-digest/categories/business/">ビジネス</a>
+    </div>
+</nav>
+    <div class="container">
+        <div class="hero">
+            <h1>AI News Digest</h1>
+            <p>AIが厳選・要約する最新テクノロジーニュース</p>
+        </div>
+
+        
+
+        
+        <div class="day-card">
+            <div class="day-date">2026-03-21</div>
+            <h2><a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/">AI暴走対策とエージェント技術が急速に進展</a></h2>
+            <p class="day-digest">本日のAIニュースは、実務領域での急速な普及と技術進化が顕著となっています。Claudeを中心とした生成AIの活用が就活、マーケティング、配送業務など多岐にわたる分野で進展する一方で、安全性確保や倫理的課題への対応も重要テーマとして浮上しています。特にClaudeの新機能開発と開発者向けイベントの拡大により、エコシステムの成熟が加速している傾向が見られます。
+
+本日のテック関連ニュースはAI技術の...</p>
+            <p class="day-count">30件の記事</p>
+        </div>
+        
+        
+        
+
+        
+
+        <div class="affiliate-box">
+  <div class="affiliate-label">PR</div>
+  <a href="https://www.amazon.co.jp/kindle-dbs/hz/signup?tag=YOUR_TAG" target="_blank" rel="noopener sponsored" class="affiliate-link">📱 Kindle Unlimited 無料体験</a>
+  <small class="affiliate-desc">200万冊以上が読み放題</small>
+</div>
+
+
+        <footer class="site-footer">
+            <div class="footer-links">
+                <a href="https://yourusername.github.io/ai-news-digest/">トップ</a>
+                <a href="https://yourusername.github.io/ai-news-digest/feed.xml">RSS</a>
+                <a href="https://yourusername.github.io/ai-news-digest/sitemap.xml">サイトマップ</a>
+            </div>
+            <p>AIが厳選・要約する最新テクノロジーニュース</p>
+            <p>&copy; 2026 AI News Digest</p>
+        </footer>
+    </div>
+</body>
+</html>

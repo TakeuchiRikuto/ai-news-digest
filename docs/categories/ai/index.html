@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI - AI News Digest</title>
+    <meta name="description" content="AI News DigestのAIカテゴリの記事一覧">
+    <link rel="canonical" href="https://yourusername.github.io/ai-news-digest/categories/ai/">
+    <meta property="og:title" content="AI - AI News Digest">
+    <meta property="og:description" content="AI News DigestのAIカテゴリの記事一覧">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/ai-news-digest/categories/ai/">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="robots" content="index, follow">
+    
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, 'Hiragino Sans', 'Noto Sans JP', 'Segoe UI', sans-serif;
+    background: #f5f7fa; color: #333;
+    line-height: 1.8;
+}
+.container {
+    max-width: 800px; margin: 0 auto; padding: 20px;
+}
+/* ナビゲーション */
+.site-nav {
+    background: #fff; padding: 12px 20px;
+    display: flex; align-items: center; justify-content: space-between;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100;
+}
+.nav-home {
+    font-weight: 700; font-size: 1.1em; color: #667eea;
+    text-decoration: none;
+}
+.nav-links { display: flex; gap: 16px; }
+.nav-links a {
+    color: #555; text-decoration: none; font-size: 0.9em;
+    padding: 4px 8px; border-radius: 6px; transition: background 0.2s;
+}
+.nav-links a:hover { background: #f0f0f5; color: #667eea; }
+/* ヘッダー */
+header.article-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white; padding: 30px; border-radius: 12px;
+    margin-bottom: 30px;
+}
+header.article-header h1 { font-size: 1.5em; margin-bottom: 10px; }
+header.article-header .date { opacity: 0.8; font-size: 0.9em; }
+/* ダイジェスト */
+.digest {
+    background: white; padding: 25px; border-radius: 12px;
+    margin-bottom: 20px; border-left: 4px solid #667eea;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+.digest h2 { color: #667eea; margin-bottom: 10px; font-size: 1.1em; }
+/* 記事カード */
+.article-card {
+    background: white; padding: 20px; border-radius: 12px;
+    margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.article-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+.article-card h3 { font-size: 1.1em; margin-bottom: 8px; }
+.article-card h3 a { color: #333; text-decoration: none; }
+.article-card h3 a:hover { color: #667eea; }
+.meta { color: #888; font-size: 0.85em; margin-bottom: 8px; }
+.meta .source { color: #667eea; font-weight: bold; }
+.meta .importance {
+    display: inline-block; background: #667eea; color: white;
+    padding: 2px 8px; border-radius: 10px; font-size: 0.75em;
+}
+.tags { margin-top: 10px; }
+.tags span {
+    display: inline-block; background: #e8eaf6;
+    color: #667eea; padding: 3px 10px;
+    border-radius: 15px; font-size: 0.8em; margin-right: 5px; margin-bottom: 4px;
+}
+/* アフィリエイト */
+.affiliate-box {
+    background: linear-gradient(135deg, #fff8e1 0%, #fff3e0 100%);
+    padding: 20px; border-radius: 12px;
+    margin: 25px 0; text-align: center;
+    border: 1px solid #ffe0b2; position: relative;
+}
+.affiliate-label {
+    position: absolute; top: -8px; left: 16px;
+    background: #ff9800; color: white; font-size: 0.7em;
+    padding: 1px 8px; border-radius: 4px; font-weight: bold;
+}
+.affiliate-link {
+    display: inline-block; color: #e65100; font-weight: bold;
+    text-decoration: none; font-size: 1.05em;
+    padding: 8px 16px; margin: 4px;
+    border-radius: 8px; background: rgba(255,255,255,0.7);
+    transition: background 0.2s;
+}
+.affiliate-link:hover { background: rgba(255,255,255,1); }
+.affiliate-desc { color: #888; display: block; margin-top: 2px; font-size: 0.8em; }
+/* 広告 */
+.ad-unit { margin: 25px 0; text-align: center; min-height: 90px; }
+/* 関連記事 */
+.related-section {
+    background: white; padding: 25px; border-radius: 12px;
+    margin: 25px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+.related-section h2 { color: #667eea; margin-bottom: 15px; font-size: 1.1em; }
+.related-list { list-style: none; }
+.related-list li { padding: 8px 0; border-bottom: 1px solid #f0f0f5; }
+.related-list li:last-child { border-bottom: none; }
+.related-list a { color: #333; text-decoration: none; }
+.related-list a:hover { color: #667eea; }
+.related-list .related-date { color: #aaa; font-size: 0.8em; margin-left: 8px; }
+/* フッター */
+footer.site-footer {
+    text-align: center; color: #888;
+    padding: 30px 20px; font-size: 0.85em;
+    border-top: 1px solid #e0e0e0; margin-top: 40px;
+}
+footer.site-footer a { color: #667eea; text-decoration: none; }
+footer.site-footer .footer-links { margin-bottom: 10px; }
+footer.site-footer .footer-links a { margin: 0 8px; }
+/* レスポンシブ */
+@media (max-width: 600px) {
+    .container { padding: 10px; }
+    header.article-header { padding: 20px; }
+    header.article-header h1 { font-size: 1.2em; }
+    .site-nav { flex-direction: column; gap: 8px; }
+    .nav-links { gap: 8px; flex-wrap: wrap; justify-content: center; }
+}
+
+    .category-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white; padding: 30px; border-radius: 12px;
+        margin-bottom: 30px; text-align: center;
+    }
+    .category-header h1 { font-size: 1.5em; }
+    .category-article {
+        background: white; padding: 16px 20px; border-radius: 10px;
+        margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    .category-article h3 { font-size: 1em; margin-bottom: 4px; }
+    .category-article h3 a { color: #333; text-decoration: none; }
+    .category-article h3 a:hover { color: #667eea; }
+    .category-article .meta { font-size: 0.82em; }
+    </style>
+</head>
+<body>
+    <nav class="site-nav">
+    <a href="https://yourusername.github.io/ai-news-digest/" class="nav-home">AI News Digest</a>
+    <div class="nav-links">
+        <a href="https://yourusername.github.io/ai-news-digest/">トップ</a>
+        <a href="https://yourusername.github.io/ai-news-digest/categories/ai/">AI</a>
+        <a href="https://yourusername.github.io/ai-news-digest/categories/tech/">テクノロジー</a>
+        <a href="https://yourusername.github.io/ai-news-digest/categories/business/">ビジネス</a>
+    </div>
+</nav>
+    <div class="container">
+        <div class="category-header">
+            <h1>AI</h1>
+        </div>
+
+        
+
+        
+        <div class="category-article">
+            <h3><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE1EemdkZDF3UEJ3UklqbWkySkZtNmNiTEtrQUppN2FwNEl4WVJJU2p4RzJ5bkM2YVFnWlI3RHNDdWdIVXV6VjlNdFBfbEpKX0NCMDFNWW91NkNGOF9vdHc?oc=5" target="_blank" rel="noopener">［就活タイムス］生成AIで面接練習も 本紙アンケート 就活生に急速浸透 安易な活用 均質化の恐れ - 沖縄タイムス社</a></h3>
+            <div class="meta">
+                <span class="source">Google News AI</span> ・ 2026-03-20 19:00
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">就活生の間で生成AIを面接練習に活用する傾向が広がっており、便利さの反面、回答の均質化による差別化の困難さが懸念されている。</p>
+        </div>
+        
+        
+        <div class="category-article">
+            <h3><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5ySDdaWWNidklFQm80XzBrX2h3VlhRT3UxUUtnSFBZUHBIQXNmWF9yd2pCSW80VWQ1WExKWXVnaERESjE0VEtSekFWbnVPaXhTbDhVUTVRWno2VjQ3ZlFj?oc=5" target="_blank" rel="noopener">Generalist biological artificial intelligence in modeling the language of life - Nature</a></h3>
+            <div class="meta">
+                <span class="source">Google News AI(英語)</span> ・ 2026-03-20 10:56
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">生物学の言語モデルとしてAIを応用し、生命現象の理解に貢献する汎用的な人工知能システムが開発されている。</p>
+        </div>
+        
+        
+        <div class="category-article">
+            <h3><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxNbU1TMC0zSU90TDBoMWl2b1hYcXhvdGtoVkZEMGE5dmdlLVRyejlaOWdHMThHRnRfX2VjYkNYc0xzYXNCZmo4RG5nc3VfbHl5cjg0ZUZHYjhab3RZaWQwTTFmZ2ZXcF9tMWtJV3pPWEhpb2EzMVI2RG1PbG1fTVlmTUpUME82aENxdEE?oc=5" target="_blank" rel="noopener">Basic Safeguarding of Artificial Intelligence Systems - The Foundation for American Innovation</a></h3>
+            <div class="meta">
+                <span class="source">Google News AI(英語)</span> ・ 2026-03-20 08:12
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">AI システムの安全性確保に向けた基本的なセーフガード機構の構築重要性が提唱されている。</p>
+        </div>
+        
+        
+        <div class="category-article">
+            <h3><a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE1NSGx5ZloyelhVUGVuSG1LYV9fRU85OFBMb0J0NlhGU21jR3JoTnNmYTZXbm5DUlVKZ1ZjSTMyR0pKRV9ELXdYSzVhcC1QQ3JLczRJ?oc=5" target="_blank" rel="noopener">【完全版】唸るほど凄い「Claude Cowork」活用法、最強すぎた「ChatGPT使い分け術」 連載：きょうから使える生成AI仕事術 - ビジネス+IT</a></h3>
+            <div class="meta">
+                <span class="source">Google News AI</span> ・ 2026-03-18 22:10
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">Claude CoworkとChatGPTの使い分け方法や活用テクニックについて、実務で即座に導入できる具体的な事例が紹介されている。</p>
+        </div>
+        
+        
+        <div class="category-article">
+            <h3><a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFB0dUZiOW84S1czTEdsekxvUFlWdjRpMm14Nl9pRGZodFVaZUxXZ3F0XzJUdS1feTVVU19jU2tYenRkdkxHdTMzNm5faXBLQkxTRFdpVWczYm1tVkZYNW8tSngtVHpPdw?oc=5" target="_blank" rel="noopener">マーケ向けAIの本命「Claude」 従来1カ月かかった仮説導出が半日で完了 - 日経クロストレンド</a></h3>
+            <div class="meta">
+                <span class="source">Google News AI</span> ・ 2026-03-17 15:00
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">マーケティング業務でClaudeを活用することで、従来1ヶ月要していた仮説立案プロセスを半日に短縮できることが報告されている。</p>
+        </div>
+        
+        <div class="affiliate-box">
+  <div class="affiliate-label">PR</div>
+  <a href="#" target="_blank" rel="noopener sponsored" class="affiliate-link">🤖 AIプログラミングを学ぶ</a>
+  <small class="affiliate-desc">Udemyの人気AI講座（A8.net経由）</small>
+</div>
+
+        
+        
+        <div class="category-article">
+            <h3><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxPQXdnUUUwV1JzejhvSDBhejhqWWF0clZnbmhpLUhYZWNPcm9DVjFsM0hPU1FSZVFKSkxLR1dqS080T1FtVHp6WDRHZTJDWWhBZ3lteVcyZUdzZTE1N0N0amkyTmVnS0c5YzNyOUZ4dXNfeWxvM1R2ajI2RTFHV3ZjSE5SNGxYdVJmTUVCRnhPdFJOa1Fxbkh4OQ?oc=5" target="_blank" rel="noopener">2 Millionaire-Maker Artificial Intelligence (AI) Stocks - The Motley Fool</a></h3>
+            <div class="meta">
+                <span class="source">Google News AI(英語)</span> ・ 2026-03-20 18:59
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">AI関連銘柄の中でも特に利益成長が期待できる2つの企業に投資家の注目が集まっている。</p>
+        </div>
+        
+        
+        <div class="category-article">
+            <h3><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxQNHkxc215TzhpdHlxSGxzR0RrVEtuQ1JMUVVnZGZrTmpVYXFXNVV5U2I3UXFNVUp1TktEM0htT0pGc240ZUJGUl9paTlQZ2UxT0NXRDZyR0gyZXJDU2tvRDd1WGVBa2lyRVR0akNNOWN4M2FOQ1pTUm9iTVlUUlNtcUFDeElic3Q2VHZCeU5PS3VnSHc4SmYyOHFDNnVkNG92akxOdzFZc09CSV9HSzY5X0dxdlRnN1RZ?oc=5" target="_blank" rel="noopener">DoorDash taps millions of couriers to train artificial intelligence - Los Angeles Times</a></h3>
+            <div class="meta">
+                <span class="source">Google News AI(英語)</span> ・ 2026-03-20 17:22
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">配送サービスのDoorDashが、配達員数百万人のデータを活用してAIモデルの学習に利用する取り組みを開始している。</p>
+        </div>
+        
+        
+        <div class="category-article">
+            <h3><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE9uU3pfOXBSbnlLZFpwQXBtcm5VamlRTjZxY3ZQMVg4UGQ3RHdyWXd1MVlpcHROeTF1aVV5WGRMTk9ENnNYYzNudDZvOWF3XzFTQThYaVVPNXM4ekdkR1E?oc=5" target="_blank" rel="noopener">Anthropic、開発者カンファレンス「Code with Claude」を6/10に東京で開催 ―サンフランシスコ、ロンドンでも5月に開催 - gihyo.jp</a></h3>
+            <div class="meta">
+                <span class="source">Google News AI</span> ・ 2026-03-19 04:58
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">Anthropicが6月に東京でClaudeの開発者向けカンファレンスを開催予定で、サンフランシスコやロンドンでも5月の開催が決定している。</p>
+        </div>
+        
+        
+        <div class="category-article">
+            <h3><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE92QWt1V3VQanpJNzlhTDlzdTZGTmRxLXVHZW5kN0xTTHB1OEhLYkZENlQyWUtReG1scG9XWFU2V091WVVTdG1SV0RKd19mSV83SU90UXNLNXJBM1BWZ3ZfWkFic0hSNlVtVmlmMEVVbzFPZXRyd0QzaHdWZVFta2s?oc=5" target="_blank" rel="noopener">デスクトップPCのAIエージェントをスマホで遠隔操作 「Claude Cowork」に新機能（ITmedia NEWS） - Yahoo!ニュース</a></h3>
+            <div class="meta">
+                <span class="source">Google News AI</span> ・ 2026-03-18 09:49
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">Claude Coworkに新機能が追加され、スマートフォンからデスクトップPCのAIエージェントを遠隔で操作できるようになった。</p>
+        </div>
+        
+        
+        <div class="category-article">
+            <h3><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPRUJva0F6R1l6YkVXa3lKa1BERmhpSHBiLXEzOGN2WkVsTGZQRkQ5dE0wZG9SdlBId3liTHJvb2gzRTVvOFVGWnJRSmktUGJfN2p6dU1hLVdUTjFMRS1DYXRBM2YtNFpiZm40NXg5X0s1SVJ2ZDdIRTF2Znh6SjBPUFpYdFBtQ0EzaHZPQUZ3?oc=5" target="_blank" rel="noopener">A Christian Look at Artificial Intelligence - The Banner</a></h3>
+            <div class="meta">
+                <span class="source">Google News AI(英語)</span> ・ 2026-03-20 13:59
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">宗教的観点からAIの発展や利用について倫理的な検討を行う議論が展開されている。</p>
+        </div>
+        
+        
+
+        
+
+        <div class="affiliate-box">
+  <div class="affiliate-label">PR</div>
+  <a href="#" target="_blank" rel="noopener sponsored" class="affiliate-link">🤖 AIプログラミングを学ぶ</a>
+  <small class="affiliate-desc">Udemyの人気AI講座（A8.net経由）</small>
+</div>
+
+
+        <footer class="site-footer">
+            <div class="footer-links">
+                <a href="https://yourusername.github.io/ai-news-digest/">トップ</a>
+                <a href="https://yourusername.github.io/ai-news-digest/feed.xml">RSS</a>
+            </div>
+            <p>&copy; 2026 AI News Digest</p>
+        </footer>
+    </div>
+</body>
+</html>

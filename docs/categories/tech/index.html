@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テクノロジー - AI News Digest</title>
+    <meta name="description" content="AI News Digestのテクノロジーカテゴリの記事一覧">
+    <link rel="canonical" href="https://yourusername.github.io/ai-news-digest/categories/tech/">
+    <meta property="og:title" content="テクノロジー - AI News Digest">
+    <meta property="og:description" content="AI News Digestのテクノロジーカテゴリの記事一覧">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/ai-news-digest/categories/tech/">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="robots" content="index, follow">
+    
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, 'Hiragino Sans', 'Noto Sans JP', 'Segoe UI', sans-serif;
+    background: #f5f7fa; color: #333;
+    line-height: 1.8;
+}
+.container {
+    max-width: 800px; margin: 0 auto; padding: 20px;
+}
+/* ナビゲーション */
+.site-nav {
+    background: #fff; padding: 12px 20px;
+    display: flex; align-items: center; justify-content: space-between;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100;
+}
+.nav-home {
+    font-weight: 700; font-size: 1.1em; color: #667eea;
+    text-decoration: none;
+}
+.nav-links { display: flex; gap: 16px; }
+.nav-links a {
+    color: #555; text-decoration: none; font-size: 0.9em;
+    padding: 4px 8px; border-radius: 6px; transition: background 0.2s;
+}
+.nav-links a:hover { background: #f0f0f5; color: #667eea; }
+/* ヘッダー */
+header.article-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white; padding: 30px; border-radius: 12px;
+    margin-bottom: 30px;
+}
+header.article-header h1 { font-size: 1.5em; margin-bottom: 10px; }
+header.article-header .date { opacity: 0.8; font-size: 0.9em; }
+/* ダイジェスト */
+.digest {
+    background: white; padding: 25px; border-radius: 12px;
+    margin-bottom: 20px; border-left: 4px solid #667eea;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+.digest h2 { color: #667eea; margin-bottom: 10px; font-size: 1.1em; }
+/* 記事カード */
+.article-card {
+    background: white; padding: 20px; border-radius: 12px;
+    margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.article-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+.article-card h3 { font-size: 1.1em; margin-bottom: 8px; }
+.article-card h3 a { color: #333; text-decoration: none; }
+.article-card h3 a:hover { color: #667eea; }
+.meta { color: #888; font-size: 0.85em; margin-bottom: 8px; }
+.meta .source { color: #667eea; font-weight: bold; }
+.meta .importance {
+    display: inline-block; background: #667eea; color: white;
+    padding: 2px 8px; border-radius: 10px; font-size: 0.75em;
+}
+.tags { margin-top: 10px; }
+.tags span {
+    display: inline-block; background: #e8eaf6;
+    color: #667eea; padding: 3px 10px;
+    border-radius: 15px; font-size: 0.8em; margin-right: 5px; margin-bottom: 4px;
+}
+/* アフィリエイト */
+.affiliate-box {
+    background: linear-gradient(135deg, #fff8e1 0%, #fff3e0 100%);
+    padding: 20px; border-radius: 12px;
+    margin: 25px 0; text-align: center;
+    border: 1px solid #ffe0b2; position: relative;
+}
+.affiliate-label {
+    position: absolute; top: -8px; left: 16px;
+    background: #ff9800; color: white; font-size: 0.7em;
+    padding: 1px 8px; border-radius: 4px; font-weight: bold;
+}
+.affiliate-link {
+    display: inline-block; color: #e65100; font-weight: bold;
+    text-decoration: none; font-size: 1.05em;
+    padding: 8px 16px; margin: 4px;
+    border-radius: 8px; background: rgba(255,255,255,0.7);
+    transition: background 0.2s;
+}
+.affiliate-link:hover { background: rgba(255,255,255,1); }
+.affiliate-desc { color: #888; display: block; margin-top: 2px; font-size: 0.8em; }
+/* 広告 */
+.ad-unit { margin: 25px 0; text-align: center; min-height: 90px; }
+/* 関連記事 */
+.related-section {
+    background: white; padding: 25px; border-radius: 12px;
+    margin: 25px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+.related-section h2 { color: #667eea; margin-bottom: 15px; font-size: 1.1em; }
+.related-list { list-style: none; }
+.related-list li { padding: 8px 0; border-bottom: 1px solid #f0f0f5; }
+.related-list li:last-child { border-bottom: none; }
+.related-list a { color: #333; text-decoration: none; }
+.related-list a:hover { color: #667eea; }
+.related-list .related-date { color: #aaa; font-size: 0.8em; margin-left: 8px; }
+/* フッター */
+footer.site-footer {
+    text-align: center; color: #888;
+    padding: 30px 20px; font-size: 0.85em;
+    border-top: 1px solid #e0e0e0; margin-top: 40px;
+}
+footer.site-footer a { color: #667eea; text-decoration: none; }
+footer.site-footer .footer-links { margin-bottom: 10px; }
+footer.site-footer .footer-links a { margin: 0 8px; }
+/* レスポンシブ */
+@media (max-width: 600px) {
+    .container { padding: 10px; }
+    header.article-header { padding: 20px; }
+    header.article-header h1 { font-size: 1.2em; }
+    .site-nav { flex-direction: column; gap: 8px; }
+    .nav-links { gap: 8px; flex-wrap: wrap; justify-content: center; }
+}
+
+    .category-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white; padding: 30px; border-radius: 12px;
+        margin-bottom: 30px; text-align: center;
+    }
+    .category-header h1 { font-size: 1.5em; }
+    .category-article {
+        background: white; padding: 16px 20px; border-radius: 10px;
+        margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    .category-article h3 { font-size: 1em; margin-bottom: 4px; }
+    .category-article h3 a { color: #333; text-decoration: none; }
+    .category-article h3 a:hover { color: #667eea; }
+    .category-article .meta { font-size: 0.82em; }
+    </style>
+</head>
+<body>
+    <nav class="site-nav">
+    <a href="https://yourusername.github.io/ai-news-digest/" class="nav-home">AI News Digest</a>
+    <div class="nav-links">
+        <a href="https://yourusername.github.io/ai-news-digest/">トップ</a>
+        <a href="https://yourusername.github.io/ai-news-digest/categories/ai/">AI</a>
+        <a href="https://yourusername.github.io/ai-news-digest/categories/tech/">テクノロジー</a>
+        <a href="https://yourusername.github.io/ai-news-digest/categories/business/">ビジネス</a>
+    </div>
+</nav>
+    <div class="container">
+        <div class="category-header">
+            <h1>テクノロジー</h1>
+        </div>
+
+        
+
+        
+        <div class="category-article">
+            <h3><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE5KSlVGeTNuUUtDWHB4endyODY4X2VjNTN6NzhZaVVBUDV2TUZhWTkyRlNmaG9fSlhEeDl1N0ZSZDZxcnFwUGF2a2d4V2ZveEVUelE0T0FzWUVvb0lZbGJyZTlMZG1ncTN0dXc?oc=5" target="_blank" rel="noopener">有罪、とAIは告げた - web.nhk</a></h3>
+            <div class="meta">
+                <span class="source">Google News テクノロジー</span> ・ 2026-03-20 15:12
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">AIが司法判断を下す場面が現実化し、有罪判決をAIが示すケースが報告された。法曹界でのAI活用の実態が明らかになりつつある。</p>
+        </div>
+        
+        
+        <div class="category-article">
+            <h3><a href="https://gigazine.net/news/20260320-agentic-engineering/" target="_blank" rel="noopener">コーディングAIエージェントの支援を受けてソフトウェアを開発する手法「エージェントエンジニアリング」とは？</a></h3>
+            <div class="meta">
+                <span class="source">GIGAZINE</span> ・ 2026-03-20 14:00
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">AIが自動的にコードを作成し修正まで行うエージェント型開発ツールが登場。開発者の役割がコード検証と企画に特化する方向へシフトしている。</p>
+        </div>
+        
+        
+        <div class="category-article">
+            <h3><a href="https://japan.cnet.com/article/35245281/" target="_blank" rel="noopener">NVIDIA、「AIエージェントの暴走リスク」に対処　OpenClaw向け新基盤を発表</a></h3>
+            <div class="meta">
+                <span class="source">CNET Japan</span> ・ 2026-03-19 22:02
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">NVIDIAが自律AIエージェントの暴走防止を目的とした新基盤『NemoClaw』を発表。隔離環境での実行と通信監視で安全性を確保する。</p>
+        </div>
+        
+        
+        <div class="category-article">
+            <h3><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBKVmo3MG54dG12YlBReUU4enhtSHg5NmxvdWdLcjJILXBTMlpXVU1yNnNxTHd6OTUzSjFmSklRNVgweFRrb21CTG9pRlJXYThwZ1NzcE0wRjlXUEZnUVdfekV3dm1Gbms?oc=5" target="_blank" rel="noopener">AI時代の情報空間、健全化目指す産学の新組織設立へ 慶大でシンポ - 朝日新聞</a></h3>
+            <div class="meta">
+                <span class="source">Google News テクノロジー</span> ・ 2026-03-20 10:45
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">AI時代における情報空間の健全化を目指す産学協力の新組織が立ち上がる予定。慶応大学主催のシンポジウムで発表される。</p>
+        </div>
+        
+        
+        <div class="category-article">
+            <h3><a href="https://news.web.nhk/newsweb/na/na-k10015080001000" target="_blank" rel="noopener">福島第一原発3号機 原子炉の真下の核燃料デブリか 映像公開</a></h3>
+            <div class="meta">
+                <span class="source">NHK 科学・文化</span> ・ 2026-03-19 10:55
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">福島第一原発3号機の内部調査でドローンが原子炉直下のエリアを撮影。事故後初めて確認された核燃料デブリの可能性がある付着物が映像に記録された。</p>
+        </div>
+        
+        <div class="affiliate-box">
+  <div class="affiliate-label">PR</div>
+  <a href="https://www.amazon.co.jp/b?node=466298&tag=YOUR_TAG" target="_blank" rel="noopener sponsored" class="affiliate-link">📚 テック書籍を探す</a>
+  <small class="affiliate-desc">Amazon テクノロジー書籍</small>
+  <a href="#" target="_blank" rel="noopener sponsored" class="affiliate-link">🎓 プログラミングスクール</a>
+  <small class="affiliate-desc">テックアカデミー（もしもアフィリエイト経由）</small>
+</div>
+
+        
+        
+        <div class="category-article">
+            <h3><a href="https://gigazine.net/news/20260320-meta-reverses-horizon-worlds-vr-support-end/" target="_blank" rel="noopener">MetaがHorizon WorldsのVRサポート終了を撤回</a></h3>
+            <div class="meta">
+                <span class="source">GIGAZINE</span> ・ 2026-03-20 13:00
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">Metaが一度発表したHorizon WorldsのVRサポート終了方針を覆し、継続支援を決定した。ユーザーの声に応えた戦略転換である。</p>
+        </div>
+        
+        
+        <div class="category-article">
+            <h3><a href="https://gigazine.net/news/20260320-imapsync/" target="_blank" rel="noopener">無料でIMAPメールボックスをまるごと別のIMAPに転送できる「imapsync」、Windows・Linux・Mac対応でGmailでも可能</a></h3>
+            <div class="meta">
+                <span class="source">GIGAZINE</span> ・ 2026-03-20 11:00
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">複数のOS対応するメール移行ツール『imapsync』が公開され、無料でIMAP形式のメール転送が可能になった。Gmail含め様々なサービスで利用できる。</p>
+        </div>
+        
+        
+        <div class="category-article">
+            <h3><a href="https://www.watch.impress.co.jp/docs/news/2095017.html" target="_blank" rel="noopener">楽天証券、ログイン情報の再設定をオンラインで完結　JPKI対応</a></h3>
+            <div class="meta">
+                <span class="source">Impress Watch</span> ・ 2026-03-20 11:00
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">楽天証券がマイナンバーカード認証を導入し、ログイン情報の再設定をオンライン完結できるようにした。本人確認手続きの利便性が向上する。</p>
+        </div>
+        
+        
+        <div class="category-article">
+            <h3><a href="https://gigazine.net/news/20260320-elecom-de-c86-10000pn/" target="_blank" rel="noopener">エレコムの半固体モバイルバッテリー「DE-C86-10000」レビュー、半固体リチウムイオン電池を採用して高い携帯性と安全性を実現</a></h3>
+            <div class="meta">
+                <span class="source">GIGAZINE</span> ・ 2026-03-20 09:00
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">エレコムの半固体リチウムイオン電池搭載モバイルバッテリーが登場。従来の液体電解質より安全性と性能が向上している。</p>
+        </div>
+        
+        
+        <div class="category-article">
+            <h3><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTFBpZWtuNVlHNG9hTVJCTVpmUUY4WnJIWE5oSkJjQzB0SzNuaC1oOHpmbml4UFJqd1NQUV9reDd0MkNISnFIZXV0NUpsUzhIWl85YVVzaHNHNkdTMUlab2FsUzJER0Jhb0E3SlA5Z0FfaHJHbWF2XzUw?oc=5" target="_blank" rel="noopener">イラン情勢に翻弄されるトレーダー、AIに活路－戦況分析を高速化 - Bloomberg.com</a></h3>
+            <div class="meta">
+                <span class="source">Google News テクノロジー</span> ・ 2026-03-20 05:39
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">金融市場でAIを活用した戦況分析が加速している。イラン情勢など地政学的リスク分析の高速化を実現し、トレーダーの判断支援に役立つ。</p>
+        </div>
+        
+        
+        <div class="category-article">
+            <h3><a href="https://news.web.nhk/newsweb/na/na-k10015079981000" target="_blank" rel="noopener">将棋「王将戦」七番勝負 第6局 藤井六冠が勝ち 決着は最終局へ</a></h3>
+            <div class="meta">
+                <span class="source">NHK 科学・文化</span> ・ 2026-03-19 11:26
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">将棋の王将戦七番勝負第6局で藤井聡太六冠が勝利し、決着が最終局に持ち込まれた。タイトル防衛戦の緊迫した状況が続く。</p>
+        </div>
+        
+        
+        <div class="category-article">
+            <h3><a href="https://news.web.nhk/newsweb/na/na-k10015079971000" target="_blank" rel="noopener">柏崎刈羽原発6号機 警報原因は金属疲労 22日にも発送電再開へ</a></h3>
+            <div class="meta">
+                <span class="source">NHK 科学・文化</span> ・ 2026-03-19 09:56
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">柏崎刈羽原発6号機の警報原因が金属疲労と判明。22日にも発電送電の再開が予定されている。</p>
+        </div>
+        
+        
+        <div class="category-article">
+            <h3><a href="https://news.web.nhk/newsweb/na/na-k10015079951000" target="_blank" rel="noopener">小学館 性加害事件の漫画家起用問題で第三者委員会を設置</a></h3>
+            <div class="meta">
+                <span class="source">NHK 科学・文化</span> ・ 2026-03-19 09:28
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">小学館が性加害事件を起こした漫画家の再起用問題について第三者委員会を設置。コンプライアンス体制の見直しを進める方針。</p>
+        </div>
+        
+        
+        <div class="category-article">
+            <h3><a href="https://japan.cnet.com/article/35245265/" target="_blank" rel="noopener">ついにiPhoneのファミリー共有で「管理者以外の決済」が可能に　iOS 26.4から</a></h3>
+            <div class="meta">
+                <span class="source">CNET Japan</span> ・ 2026-03-19 08:10
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">iOS 26.4以降、iPhoneのファミリー共有で管理者以外のメンバーが独立した支払い方法を使用できるようになる。決済の柔軟性が大幅に向上する。</p>
+        </div>
+        
+        
+        <div class="category-article">
+            <h3><a href="https://gigazine.net/news/20260320-g-gundam-30th-fighting-movie/" target="_blank" rel="noopener">『機動武闘伝Gガンダム』30周年記念ファイティングムービー公開、『ガンダムX』30周年記念ロゴも</a></h3>
+            <div class="meta">
+                <span class="source">GIGAZINE</span> ・ 2026-03-20 10:00
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">『機動武闘伝Gガンダム』の放送30周年を記念し、3DCGアニメーションのファイティングムービーが公開された。デジタルアニメーション技術の進化を示す作品。</p>
+        </div>
+        
+        
+        <div class="category-article">
+            <h3><a href="https://www.watch.impress.co.jp/docs/news/2094966.html" target="_blank" rel="noopener">「超危険生物展」が開幕　陸と海のヤバい奴らが国立科学博物館に集結!</a></h3>
+            <div class="meta">
+                <span class="source">Impress Watch</span> ・ 2026-03-20 09:00
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">国立科学博物館で危険生物の生態を科学的に解明する特別展が開催中。6月14日まで開催予定で、致命的な生き物の仕組みを学べる。</p>
+        </div>
+        
+        
+        <div class="category-article">
+            <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFBuQ2dvSGlqMW9qb2RBSGVJaUp3REU4NTEtdWpmX1RrWWVGOEMyNnJubHpDVlJGbWU3eXZOSUMwSFBDbkt2UG9wVWF6YmpMbGhzaEpXby1Hem9iV1hSaUNDaDZ0QU1EWVFHRGdEZEJR?oc=5" target="_blank" rel="noopener">競馬AIがフラワーC、ファルコンSを大予想 3週連続的中へ厳選ワイド3点＆3連複10点で勝負！ - スポーツナビ</a></h3>
+            <div class="meta">
+                <span class="source">Google News テクノロジー</span> ・ 2026-03-20 08:20
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">競馬予想AIが週末レースの予想を発表。過去数週間の的中記録に基づき、複数の馬券パターンを提示している。</p>
+        </div>
+        
+        
+        <div class="category-article">
+            <h3><a href="https://www.watch.impress.co.jp/docs/news/2094909.html" target="_blank" rel="noopener">シチズン、エコ・ドライブ50周年で新型“フォトン”</a></h3>
+            <div class="meta">
+                <span class="source">Impress Watch</span> ・ 2026-03-20 01:00
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">シチズン時計がエコ・ドライブ技術50周年を記念し、新型腕時計2機種を秋に発売。各5000本限定で148500円と178200円の価格帯。</p>
+        </div>
+        
+        
+        <div class="category-article">
+            <h3><a href="https://www.watch.impress.co.jp/docs/review/review/2093935.html" target="_blank" rel="noopener">【レビュー】Apple Fitness+を1カ月続けた結果　自宅がジムになるありがたさ</a></h3>
+            <div class="meta">
+                <span class="source">Impress Watch</span> ・ 2026-03-20 00:15
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">Apple Fitness+を1ヶ月間試用したレビュー記事。自宅でのフィットネス活動が手軽に実現できる利点が述べられている。</p>
+        </div>
+        
+        
+        <div class="category-article">
+            <h3><a href="https://www.watch.impress.co.jp/docs/news/2095013.html" target="_blank" rel="noopener">ファミマ45周年で「45%増量作戦」　コッペパンやカレー、助六寿司など</a></h3>
+            <div class="meta">
+                <span class="source">Impress Watch</span> ・ 2026-03-19 23:00
+                ・ <a href="https://yourusername.github.io/ai-news-digest/articles/2026/03/21/" style="color:#667eea;text-decoration:none;">ダイジェストを読む</a>
+            </div>
+            <p style="font-size:0.9em;color:#555;margin-top:4px;">ファミリーマートが創立45周年を記念し、複数の人気商品を価格据え置きで45%増量するキャンペーンを3月下旬から展開する。</p>
+        </div>
+        
+        
+
+        
+
+        <div class="affiliate-box">
+  <div class="affiliate-label">PR</div>
+  <a href="https://www.amazon.co.jp/b?node=466298&tag=YOUR_TAG" target="_blank" rel="noopener sponsored" class="affiliate-link">📚 テック書籍を探す</a>
+  <small class="affiliate-desc">Amazon テクノロジー書籍</small>
+  <a href="#" target="_blank" rel="noopener sponsored" class="affiliate-link">🎓 プログラミングスクール</a>
+  <small class="affiliate-desc">テックアカデミー（もしもアフィリエイト経由）</small>
+</div>
+
+
+        <footer class="site-footer">
+            <div class="footer-links">
+                <a href="https://yourusername.github.io/ai-news-digest/">トップ</a>
+                <a href="https://yourusername.github.io/ai-news-digest/feed.xml">RSS</a>
+            </div>
+            <p>&copy; 2026 AI News Digest</p>
+        </footer>
+    </div>
+</body>
+</html>

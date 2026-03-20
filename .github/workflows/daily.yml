@@ -1,0 +1,50 @@
+name: Daily AI News Digest
+
+on:
+  schedule:
+    - cron: '0 22 * * *'  # 7:00 AM JST (22:00 UTC前日)
+  workflow_dispatch:       # 手動実行も可能
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate AI news
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SITE_URL: ${{ vars.SITE_URL }}
+          ADSENSE_CLIENT_ID: ${{ vars.ADSENSE_CLIENT_ID }}
+          AFFILIATE_AI_LEARNING: ${{ vars.AFFILIATE_AI_LEARNING }}
+          AFFILIATE_AI_PC: ${{ vars.AFFILIATE_AI_PC }}
+          AFFILIATE_TECH_BOOKS: ${{ vars.AFFILIATE_TECH_BOOKS }}
+          AFFILIATE_PROG_SCHOOL: ${{ vars.AFFILIATE_PROG_SCHOOL }}
+          AFFILIATE_FINANCE: ${{ vars.AFFILIATE_FINANCE }}
+          AFFILIATE_BIZ_BOOKS: ${{ vars.AFFILIATE_BIZ_BOOKS }}
+          AFFILIATE_KINDLE: ${{ vars.AFFILIATE_KINDLE }}
+        run: |
+          python main.py -c ai
+          python main.py -c tech
+          python main.py --build-site
+
+      - name: Deploy to GitHub Pages
+        run: |
+          git config user.name "AI News Bot"
+          git config user.email "bot@example.com"
+          git add docs/ output/
+          git diff --staged --quiet || git commit -m "$(date +%Y-%m-%d) news update"
+          git push

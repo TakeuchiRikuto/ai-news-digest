@@ -278,6 +278,8 @@ BLOG_TEMPLATE = Template("""<!DOCTYPE html>
         <footer class="site-footer">
             <div class="footer-links">
                 <a href="{{ site_url }}/">トップ</a>
+                <a href="{{ site_url }}/privacy/">プライバシーポリシー</a>
+                <a href="{{ site_url }}/contact/">お問い合わせ</a>
                 <a href="{{ site_url }}/feed.xml">RSS</a>
             </div>
             <p>このニュースダイジェストはAIによって自動生成されています。</p>

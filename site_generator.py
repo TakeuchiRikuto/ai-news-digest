@@ -184,6 +184,8 @@ INDEX_TEMPLATE = Template("""<!DOCTYPE html>
         <footer class="site-footer">
             <div class="footer-links">
                 <a href="{{ site_url }}/">トップ</a>
+                <a href="{{ site_url }}/privacy/">プライバシーポリシー</a>
+                <a href="{{ site_url }}/contact/">お問い合わせ</a>
                 <a href="{{ site_url }}/feed.xml">RSS</a>
                 <a href="{{ site_url }}/sitemap.xml">サイトマップ</a>
             </div>
@@ -280,6 +282,8 @@ ARTICLE_PAGE_TEMPLATE = Template("""<!DOCTYPE html>
         <footer class="site-footer">
             <div class="footer-links">
                 <a href="{{ site_url }}/">トップ</a>
+                <a href="{{ site_url }}/privacy/">プライバシーポリシー</a>
+                <a href="{{ site_url }}/contact/">お問い合わせ</a>
                 <a href="{{ site_url }}/feed.xml">RSS</a>
             </div>
             <p>このニュースダイジェストはAIによって自動生成されています。</p>
@@ -356,6 +360,8 @@ CATEGORY_TEMPLATE = Template("""<!DOCTYPE html>
         <footer class="site-footer">
             <div class="footer-links">
                 <a href="{{ site_url }}/">トップ</a>
+                <a href="{{ site_url }}/privacy/">プライバシーポリシー</a>
+                <a href="{{ site_url }}/contact/">お問い合わせ</a>
                 <a href="{{ site_url }}/feed.xml">RSS</a>
             </div>
             <p>&copy; {{ year }} {{ site_name }}</p>
@@ -363,6 +369,153 @@ CATEGORY_TEMPLATE = Template("""<!DOCTYPE html>
     </div>
 </body>
 </html>""")
+
+
+# ─── 固定ページテンプレート ───
+STATIC_PAGE_TEMPLATE = Template("""<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page_title }} - {{ site_name }}</title>
+    <meta name="description" content="{{ page_description }}">
+    <link rel="canonical" href="{{ canonical_url }}">
+    <meta property="og:title" content="{{ page_title }} - {{ site_name }}">
+    <meta property="og:description" content="{{ page_description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:site_name" content="{{ site_name }}">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="robots" content="index, follow">
+    {{ adsense_head }}
+    <style>{{ css }}
+    .static-page-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white; padding: 30px; border-radius: 12px;
+        margin-bottom: 30px; text-align: center;
+    }
+    .static-page-header h1 { font-size: 1.5em; }
+    .static-page-content {
+        background: white; padding: 30px; border-radius: 12px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.06); line-height: 1.9;
+    }
+    .static-page-content h2 {
+        color: #667eea; font-size: 1.15em; margin-top: 28px; margin-bottom: 10px;
+        padding-bottom: 6px; border-bottom: 2px solid #e8eaf6;
+    }
+    .static-page-content h2:first-child { margin-top: 0; }
+    .static-page-content p { margin-bottom: 12px; font-size: 0.95em; color: #444; }
+    .static-page-content ul { margin: 8px 0 16px 20px; font-size: 0.95em; color: #444; }
+    .static-page-content ul li { margin-bottom: 4px; }
+    .static-page-content a { color: #667eea; }
+    .contact-btn {
+        display: inline-block; background: #667eea; color: white !important;
+        padding: 12px 28px; border-radius: 8px; text-decoration: none;
+        font-weight: bold; margin-top: 10px; transition: background 0.2s;
+    }
+    .contact-btn:hover { background: #5a6fd6; }
+    </style>
+</head>
+<body>
+    {{ nav }}
+    <div class="container">
+        <div class="static-page-header">
+            <h1>{{ page_title }}</h1>
+        </div>
+
+        <div class="static-page-content">
+            {{ content }}
+        </div>
+
+        <footer class="site-footer">
+            <div class="footer-links">
+                <a href="{{ site_url }}/">トップ</a>
+                <a href="{{ site_url }}/privacy/">プライバシーポリシー</a>
+                <a href="{{ site_url }}/contact/">お問い合わせ</a>
+                <a href="{{ site_url }}/feed.xml">RSS</a>
+                <a href="{{ site_url }}/sitemap.xml">サイトマップ</a>
+            </div>
+            <p>&copy; {{ year }} {{ site_name }}</p>
+        </footer>
+    </div>
+</body>
+</html>""")
+
+
+PRIVACY_POLICY_CONTENT = f"""
+<h2>個人情報の取り扱いについて</h2>
+<p>当サイト（{SITE_NAME}）（以下「当サイト」）は、ユーザーの個人情報の取り扱いについて、以下の通りプライバシーポリシーを定めます。</p>
+
+<h2>収集する情報</h2>
+<p>当サイトでは、お問い合わせの際にお名前、メールアドレス等の個人情報をご提供いただく場合があります。これらの情報は、お問い合わせへの回答およびご連絡のためにのみ使用し、それ以外の目的では利用いたしません。</p>
+
+<h2>Cookie（クッキー）について</h2>
+<p>当サイトでは、ユーザーの利便性向上およびアクセス解析のためにCookieを使用する場合があります。Cookieとは、ウェブサイトがユーザーのブラウザに保存する小さなテキストファイルです。</p>
+<p>ブラウザの設定により、Cookieの受け入れを拒否することが可能ですが、その場合、サイトの一部機能が正常に動作しない可能性があります。</p>
+
+<h2>アクセス解析ツールについて</h2>
+<p>当サイトでは、Googleによるアクセス解析ツール「Google Analytics」を使用する場合があります。Google Analyticsはトラフィックデータの収集のためにCookieを使用しています。このトラフィックデータは匿名で収集されており、個人を特定するものではありません。</p>
+<p>この機能はCookieを無効にすることで収集を拒否することができますので、お使いのブラウザの設定をご確認ください。Google Analyticsの利用規約については、<a href="https://marketingplatform.google.com/about/analytics/terms/jp/" target="_blank" rel="noopener">Google アナリティクス利用規約</a>をご覧ください。</p>
+
+<h2>広告配信について（Google AdSense）</h2>
+<p>当サイトでは、第三者配信の広告サービス「Google AdSense」を利用する場合があります。広告配信事業者は、ユーザーの興味に応じた商品やサービスの広告を表示するために、当サイトや他のサイトへのアクセスに関する情報（氏名、住所、メールアドレス、電話番号は含まれません）を使用することがあります。</p>
+<p>詳細については、<a href="https://policies.google.com/technologies/ads?hl=ja" target="_blank" rel="noopener">Google 広告に関するポリシー</a>をご確認ください。</p>
+
+<h2>アフィリエイトリンクについて</h2>
+<p>当サイトでは、Amazon.co.jpアソシエイト、A8.net、もしもアフィリエイトなどのアフィリエイトプログラムに参加しています。記事内にアフィリエイトリンクが含まれる場合があり、リンクを経由して商品を購入された場合、当サイトが報酬を受け取ることがあります。</p>
+<p>アフィリエイトリンクは「PR」と明示しています。ユーザーが商品を購入される際の価格への影響はありません。</p>
+
+<h2>AI生成コンテンツに関する免責事項</h2>
+<p>当サイトの記事・ニュースダイジェストは、AIによって自動生成されています。コンテンツの正確性には細心の注意を払っておりますが、AI生成の性質上、情報に誤りが含まれる可能性があります。</p>
+<ul>
+    <li>記事の要約はAIによる自動要約であり、元記事の意図を完全に反映していない場合があります。</li>
+    <li>正確な情報については、必ず各記事の出典リンクから元の記事をご確認ください。</li>
+    <li>当サイトのコンテンツに基づいて行われた判断や行動について、当サイトは一切の責任を負いかねます。</li>
+</ul>
+
+<h2>プライバシーポリシーの変更</h2>
+<p>当サイトは、必要に応じて本プライバシーポリシーを変更することがあります。変更後のプライバシーポリシーは、当ページに掲載した時点で効力を生じるものとします。</p>
+
+<p style="margin-top:24px;color:#888;font-size:0.85em;">最終更新日: {datetime.now().strftime("%Y年%m月%d日")}</p>
+"""
+
+
+CONTACT_PAGE_CONTENT = f"""
+<h2>お問い合わせ</h2>
+<p>当サイト（{SITE_NAME}）へのお問い合わせは、以下の方法でご連絡ください。</p>
+
+<h2>お問い合わせ方法</h2>
+<p>以下のGoogleフォームまたはメールにてお問い合わせを受け付けております。</p>
+
+<p style="text-align:center;margin:24px 0;">
+    <a href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform" class="contact-btn" target="_blank" rel="noopener">
+        Googleフォームでお問い合わせ
+    </a>
+</p>
+
+<p style="text-align:center;color:#888;">または</p>
+
+<p style="text-align:center;margin:16px 0;">
+    <a href="mailto:your-email@example.com" class="contact-btn">
+        メールでお問い合わせ
+    </a>
+</p>
+
+<h2>お問い合わせの際のお願い</h2>
+<ul>
+    <li>お問い合わせの内容によっては、回答にお時間をいただく場合がございます。</li>
+    <li>全てのお問い合わせに回答できない場合がございますので、あらかじめご了承ください。</li>
+    <li>記事内容の誤りに関するご指摘は、該当記事のURLと合わせてお知らせください。</li>
+</ul>
+
+<h2>対応可能なお問い合わせ</h2>
+<ul>
+    <li>サイトの不具合や表示の問題について</li>
+    <li>記事内容の誤りに関するご指摘</li>
+    <li>広告掲載に関するお問い合わせ</li>
+    <li>その他、当サイトに関するご意見・ご質問</li>
+</ul>
+"""
 
 
 def _json_ld_article(data: dict, url: str) -> str:
@@ -551,12 +704,56 @@ def build_site():
     print("  🤖 robots.txt 生成中...")
     _generate_robots()
 
+    # ─── 7. 固定ページ（プライバシーポリシー・お問い合わせ） ───
+    print("  📋 固定ページ生成中...")
+    _generate_static_pages(nav, adsense_head, year)
+
     # 完了
-    page_count = len(all_days) + total_pages + len(category_map) + 3  # 記事+トップ+カテゴリ+feed+sitemap+robots
+    page_count = len(all_days) + total_pages + len(category_map) + 3 + 2  # 記事+トップ+カテゴリ+feed+sitemap+robots+固定ページ
     print(f"\n✅ サイト構築完了！")
     print(f"  → {page_count}ページを生成")
     print(f"  → 出力先: {os.path.abspath(SITE_DIR)}")
     print(f"  → GitHub Pagesにデプロイするには docs/ をコミットしてください")
+
+
+def _generate_static_pages(nav: str, adsense_head: str, year: str):
+    """プライバシーポリシー・お問い合わせなどの固定ページを生成"""
+    pages = [
+        {
+            "dir": "privacy",
+            "title": "プライバシーポリシー",
+            "description": f"{SITE_NAME}のプライバシーポリシー。個人情報の取り扱い、Cookie、広告、AI生成コンテンツについて。",
+            "content": PRIVACY_POLICY_CONTENT,
+        },
+        {
+            "dir": "contact",
+            "title": "お問い合わせ",
+            "description": f"{SITE_NAME}へのお問い合わせページ。",
+            "content": CONTACT_PAGE_CONTENT,
+        },
+    ]
+
+    for page in pages:
+        page_dir = os.path.join(SITE_DIR, page["dir"])
+        os.makedirs(page_dir, exist_ok=True)
+
+        canonical_url = f"{SITE_URL}/{page['dir']}/"
+
+        html = STATIC_PAGE_TEMPLATE.render(
+            page_title=page["title"],
+            page_description=page["description"],
+            content=page["content"],
+            site_name=SITE_NAME,
+            site_url=SITE_URL,
+            canonical_url=canonical_url,
+            year=year,
+            css=COMMON_CSS,
+            nav=nav,
+            adsense_head=adsense_head,
+        )
+
+        with open(os.path.join(page_dir, "index.html"), "w", encoding="utf-8") as f:
+            f.write(html)
 
 
 def _generate_feed_xml(days: list[dict]):
@@ -639,6 +836,15 @@ def _generate_sitemap(days: list[dict], category_map: dict):
     <lastmod>{now}</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+  </url>""")
+
+    # 固定ページ
+    for static_page in ["privacy", "contact"]:
+        urls.append(f"""  <url>
+    <loc>{SITE_URL}/{static_page}/</loc>
+    <lastmod>{now}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
   </url>""")
 
     sitemap = f"""<?xml version="1.0" encoding="UTF-8"?>

@@ -36,10 +36,17 @@ jobs:
           AFFILIATE_FINANCE: ${{ vars.AFFILIATE_FINANCE }}
           AFFILIATE_BIZ_BOOKS: ${{ vars.AFFILIATE_BIZ_BOOKS }}
           AFFILIATE_KINDLE: ${{ vars.AFFILIATE_KINDLE }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
         run: |
           python main.py -c ai
           python main.py -c tech
           python main.py --build-site
+          python main.py --post
 
       - name: Deploy to GitHub Pages
         run: |

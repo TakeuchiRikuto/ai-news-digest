@@ -251,6 +251,8 @@ def main():
                        help="静的サイトを構築")
     parser.add_argument("--all", action="store_true",
                        help="パイプライン実行 + サイト構築")
+    parser.add_argument("--post", action="store_true",
+                       help="SNS自動投稿（X, Threads）")
     parser.add_argument("--setup", action="store_true",
                        help="セットアップ手順を表示")
 
@@ -258,6 +260,12 @@ def main():
 
     if args.setup:
         show_setup()
+        return
+
+    if args.post:
+        from auto_poster import auto_post
+        today = datetime.now().strftime("%Y-%m-%d")
+        auto_post(today)
         return
 
     if args.cost:
@@ -274,6 +282,10 @@ def main():
         run_pipeline(args.category, args.dry_run)
         if not args.dry_run:
             build_site()
+            # SNS自動投稿（キーが設定されている場合のみ）
+            from auto_poster import auto_post
+            today = datetime.now().strftime("%Y-%m-%d")
+            auto_post(today)
         return
 
     run_pipeline(args.category, args.dry_run)
